@@ -1,0 +1,30 @@
+
+.tab {  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: aliceblue;
+  /* background: #dbe9ee; */
+  color: #506e7c91;
+  padding: 2em 0;  
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.tab:not(:last-child) {
+  border-right: 1.8px solid #d7d8d8;  
+}
+.tab.active {
+  background: #506e7c91;
+  /* background: #c89e9c; */
+  color: aliceblue;
+  font-weight: 700;
+}
+.panel {
+  display: none;
+  background-color: #eaeaea;
+  padding: 10px;
+}
+.panel.active {
+  display: block;
+}
