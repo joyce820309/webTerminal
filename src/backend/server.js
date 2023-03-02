@@ -27,19 +27,19 @@ io.on("connection", (socket) => {
 
     console.log("msg", msg);
     console.log(msg[1], typeof msg[1]);
-    if (msg[1] === "ls") {
-      console.log("ls");
-      return socket.emit("receiveMsg", `Music \r\n`);
+    // if (msg[1] === "ls") {
+    //   console.log("ls");
+    //   return socket.emit("receiveMsg", `Music \r\n`);
 
-      // return socket.emit(
-      //   "receiveMsg",
-      //   `Desktop Documents Downloads\nMovies Music \r\n`
-      // );
-    }
+    // return socket.emit(
+    //   "receiveMsg",
+    //   `Desktop Documents Downloads\nMovies Music \r\n`
+    // );
+    // }
 
-    if (msg[1] === "pwd") {
-      return socket.emit("receiveMsg", `/Users/Joyce \r\n`);
-    }
+    // if (msg[1] === "pwd") {
+    //   return socket.emit("receiveMsg", `/Users/Joyce \r\n`);
+    // }
 
     socket.emit("receiveMsg", `${message} \r\n`);
   });
